@@ -1,12 +1,24 @@
-import React, {useeffect, useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import ReactDOM from 'react-dom'
 
 const App = () => {
 
-    const [message, setmessage] = useState('Hello');
+    useEffect(
+        () => {
+            fetch('/recipe/hello')
+            .then(response => response.json())
+            .then(data => {console.log(data)
+                setMessage(data.message)
+            })
+            .catch(err => console.log(err))
+
+            
+        },[]
+    )
+    const [message, setMessage] = useState('Hello');
     return(
         <div className="app">
-            {message}
+            <h1>{message}</h1>
         </div>
     )
 }
