@@ -7,8 +7,6 @@ import { useForm } from 'react-hook-form'
 
 
 
-
-
 const LoggedinHome = () => {
     const [recipes, setRecipes] = useState([]);
     const [show, setShow] = useState(false)
@@ -26,7 +24,7 @@ const LoggedinHome = () => {
         }, []
     );
 
-    const getAllRecipes=()=>{ //get all recipes 
+    const getAllRecipes=()=>{ //get all recipes (1) 
         fetch('/recipe/recipes')
         .then(res => res.json())
         .then(data => {
@@ -56,7 +54,7 @@ const LoggedinHome = () => {
 
     let token=localStorage.getItem('REACT_TOKEN_AUTH_KEY')
 
-    const updateRecipe=(data)=>{
+    const updateRecipe=(data)=>{ //update (2)
         console.log(data)
 
         const requestOptions={
@@ -82,7 +80,7 @@ const LoggedinHome = () => {
 
 
 
-    const deleteRecipe=(id)=>{
+    const deleteRecipe=(id)=>{//delete (3)
         console.log(id)
         
 
