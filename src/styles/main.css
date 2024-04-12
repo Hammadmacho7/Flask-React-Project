@@ -1,0 +1,30 @@
+.container{
+    margin-top: 50px;
+
+}
+.heading{
+    font-size: 3em;
+}
+.makeBold{
+    font-size: 1em;
+    font-style: normal;
+}
+
+.form{
+    margin: auto;
+    width: 80%;
+
+}
+.back{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    background: rgb(7, 144, 198); /* Just to visualize the extent */
+    
+}
+.tester{
+    color: white;
+}
