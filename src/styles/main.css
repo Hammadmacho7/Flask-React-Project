@@ -4,6 +4,9 @@
 }
 .heading{
     font-size: 3em;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: white;
 }
 .makeBold{
     font-size: 1em;
@@ -27,4 +30,16 @@
 }
 .tester{
     color: white;
+}
+
+.recipe{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.makewhite{
+    color: white;
+    margin-top: 10px;
 }

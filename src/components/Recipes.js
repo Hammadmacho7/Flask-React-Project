@@ -1,13 +1,19 @@
 import React from 'react'
+import {Card, Button} from 'react-bootstrap'
 
 
 
-const Recipes=({title,description})=>{
+const Recipes=({title,description, onClick, onDelete})=>{
     return(
-        <div className='recipe my-3'>
-            <h3>{title}</h3>
+        <Card className='recipe'>
+            <Card.Body>
+            <Card.Title>{title}</Card.Title>
             <p>{description}</p>
-        </div>
+            <Button variant="primary" onClick={onClick}>Update</Button>
+            {' '}
+            <Button variant = "danger" onClick={onDelete}>Delete</Button>
+            </Card.Body> 
+        </Card>
     )
 }
 

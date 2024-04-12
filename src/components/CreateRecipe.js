@@ -1,11 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Form, Button} from 'react-bootstrap'
 import {useForm} from 'react-hook-form'
 
 export default function CreateRecipe() {
 
   const {register, handleSubmit, reset, formState:{errors}} = useForm()
-  const [show, setShow] = useState(false)
+ // const [show, setShow] = useState(false)
 
   const createRecipe =(data) => {
 
